@@ -24,8 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+s.description  =<<-DESC
+        test the search for view
+DESC
 
 s.homepage     = "http://www.baidu.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -79,7 +80,7 @@ s.homepage     = "http://www.baidu.com"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xiaoshiheng/Search.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/xiaoshiheng/PassWordSdk.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ s.homepage     = "http://www.baidu.com"
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "PassWord.bundle","include","libPassWordStaticLibrayrelease.a"
+#s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -116,10 +117,10 @@ s.homepage     = "http://www.baidu.com"
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
+   s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
 
@@ -131,7 +132,7 @@ s.homepage     = "http://www.baidu.com"
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+    s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
